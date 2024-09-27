@@ -16,13 +16,13 @@ public class rotate : MonoBehaviour
         // 若點擊滑鼠就要設定旋轉速度
         if (Input.GetMouseButtonDown(0))
         {
-            rotSpeed = 100;
+            rotSpeed = -10;
         }
 
         // 旋轉速度、讓輪盤旋轉
         transform.Rotate(0, 0, rotSpeed);
 
         // (增加這段)讓輪盤減速
-        rotSpeed *= 0.96f;
+        rotSpeed *= 0.999f;
     }
 }
